@@ -30,11 +30,6 @@ async function mount(query: string, siteConfig: SearchEngine) {
     }
   }
 
-  // render(
-  //   <OmnisearchCard query={query} userConfig={userConfig} />,
-  //   container as HTMLElement
-  // );
-  // use createRoot
   createRoot(container as HTMLElement).render(
     <OmnisearchCard query={query} userConfig={userConfig} />
   );
