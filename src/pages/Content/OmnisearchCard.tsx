@@ -51,12 +51,11 @@ export function OmnisearchCard(props: Props) {
     return null;
   }
 
-  const filteredOmnisearchResults = omnisearchResults.slice(0, 3);
-  const vaultName = props.userConfig.vaultName;
-
+  const topThreeOmnisearchResults = omnisearchResults.slice(0, 3);
   return (
     <Box>
-      {filteredOmnisearchResults.map((result, idx) => {
+      {topThreeOmnisearchResults.map((result, idx) => {
+        const vaultName = props.userConfig.vaultName;
         const filename = result.basename;
         const url = `obsidian://open?vault=${vaultName}&file=${filename}`;
 
