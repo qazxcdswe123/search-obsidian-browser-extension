@@ -10,6 +10,9 @@ You need to install both this browser extension and a plugin in Obsidian to take
 3. Install [Search Obsidian in Google](https://github.com/qazxcdswe123/search-obsidian-in-google) plugin in Obsidian. You can install it from obsidian plugin store.
 4. Configure the plugin in Obsidian, set the port number, authentication token, and the vault name in the Chrome extension.
 
+## TODO
+- [ ] Transfer to [esbuild](https://github.com/Debdut/browser-extension) from webpack
+
 ## Credits
 - [Omnisearch](https://github.com/scambier/obsidian-omnisearch)
 - [Obsidian-local-rest-api](https://github.com/coddingtonbear/obsidian-local-rest-api/)
