@@ -225,8 +225,14 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["icon.png", "icon.png"],
-      "matches": []
+      "resources": ["icon.png"],
+      "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "admin@ynchen.me",
+      "strict_min_version": "42.0"
+    }
+  }
 }

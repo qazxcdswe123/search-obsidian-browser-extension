@@ -1,7 +1,8 @@
 # Search Obsidian in Google
 
 ## What is this?
-This is a simple plugin that allows you to search Obsidian in Google.
+A simple plugin that allows you to search Obsidian in Google.
+You need to install both this browser extension and a plugin in Obsidian to take effects.
 
 ## How to use
 1. Install [Chrome extension](https://chrome.google.com/webstore/detail/search-obsidian-in-google/dkefnggaipjamcbnjdlapgilhlaikbme) in Chrome.
@@ -15,5 +16,4 @@ This is a simple plugin that allows you to search Obsidian in Google.
 - [Chatgpt-google-extension](https://github.com/wong2/chatgpt-google-extension)
 
 ## Help wanted
-- Need someone to port this extension to firefox, I have no idea how front-end building tools works :D
 - Remove chakra-ui dependencies and use custom css file, but I'm too lazy to do that.
