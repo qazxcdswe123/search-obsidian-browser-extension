@@ -14,7 +14,7 @@ interface OmnisearchResult {
   foundWords: string[];
   matches: {
     match: string;
-    offset: number;
+    offset: number; // TODO: Add highlight on the match
   }[];
   excerpt: string;
 }
@@ -52,13 +52,13 @@ export function OmnisearchCard(props: Props) {
   }
 
   const filteredOmnisearchResults = omnisearchResults.slice(0, 3);
-  const vaultNameEncoded = props.userConfig.vaultName;
+  const vaultName = props.userConfig.vaultName;
 
   return (
     <Box>
       {filteredOmnisearchResults.map((result, idx) => {
-        const encodedFilename = result.basename;
-        const url = `obsidian://open?vault=${vaultNameEncoded}&file=${encodedFilename}`;
+        const filename = result.basename;
+        const url = `obsidian://open?vault=${vaultName}&file=${filename}`;
 
         return (
           <Card key={idx}>
@@ -74,6 +74,9 @@ export function OmnisearchCard(props: Props) {
                 <Text
                   mt="2px"
                   dangerouslySetInnerHTML={{ __html: result.excerpt }}
+                  // TODO: Some may have trouble seeing the excerpt
+                  // TODO: Add highlight on the match
+                  // TODO: Maybe unsafe to use dangerouslySetInnerHTML
                 />
               </Box>
             </CardBody>
